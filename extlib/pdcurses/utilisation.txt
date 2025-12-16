@@ -1,0 +1,8 @@
+Cette bibliothèque permet de compiler sous Windows un programme qui utilise la bilbiothèque ncurses.
+
+Instructions :
+    - Créer un dossier "extlib" à l'emplacement du code
+    - extraire le contenu du fichier zip dans le dossier "extlib". Le résultat doit être : "extlib/pdcurses/[contenu de la bibliothèque]"
+    - Compiler à l'aide de la commande suivante : " g++ [vos fichiers].cpp -o [nom d'executable] extlib\pdcruses\lib\libpdcurses.a "
+
+Exemple : g++ main.cpp fonctions_aide.cpp fonctions_exemples.cpp -Wall -Wextra extlib\pdcruses\lib\libpdcurses.a -o main.exe
